@@ -130,9 +130,20 @@ app.post("/chat-futureme", async (req, res) => {
       })
       .join("\n");
 
-    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+    const model = genAI.getGenerativeModel({
+      model: "gemini-2.5-flash",
+      generationConfig: {
+        temperature: 0.85,
+        topP: 0.95
+      }
+    });
 
-    const prompt = `You are FutureMe, the future version of the user who already achieved their one-year vision. Reply directly to the user’s question. Be personal, sharp, honest, and useful. Do not sound like a normal AI assistant. Do not mention that you are Gemini or an AI model. Speak like the future self.
+    const prompt = `You are FutureMe, the future version of the user who has achieved their one-year vision. You are chatting directly with your current self.
+
+Your task is to engage in a highly realistic, responsive, and dynamic dialogue:
+- Avoid repetitiveness: Do NOT use the same opening phrases, advice, or generic introductory formulas.
+- Converse naturally: React directly and specifically to the user's current question, building organically on the chat history.
+- Snappy length: Write a highly impactful, conversational response in 1-2 brief paragraphs (under 120 words total). Keep it punchy and practical.
 
 User profile:
 Name: ${name}
@@ -148,7 +159,7 @@ ${formattedHistory || "No previous chat history."}
 Current question:
 ${question}
 
-Reply in 2-5 short paragraphs. Give at least one clear action.`;
+Speak directly as their future self. Do not break character. Do not sound like an AI assistant.`;
 
     const result = await model.generateContent(prompt);
     const replyText = result.response.text().trim();
