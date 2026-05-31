@@ -455,7 +455,7 @@ ${warning}
 ${mantra}
 
 Synthesized at: ${new Date().toLocaleString()}
-FutureMe - Founder Labs Premium AI Portal
+FutureMe - Premium AI Portal
 ----------------------------------`;
 
     navigator.clipboard.writeText(copyText)
