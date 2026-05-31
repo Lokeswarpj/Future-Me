@@ -224,11 +224,22 @@ nav {
 }
 
 .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     font-size: 1.4rem;
     font-weight: 800;
     color: var(--text-primary);
     text-decoration: none;
     letter-spacing: -1px;
+}
+
+.logo-icon {
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.logo:hover .logo-icon {
+    transform: rotate(15deg) scale(1.1);
 }
 
 .nav-links {
