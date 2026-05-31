@@ -14,7 +14,6 @@
     ]
   },
   "functions": {
-    "source": "functions",
-    "codeRewriteCopier": true
+    "source": "functions"
   }
 }
