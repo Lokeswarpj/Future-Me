@@ -4,7 +4,7 @@
 
 **FutureMe** is a premium, high-fidelity AI-powered personal growth and reflection application. It allows users to reflect on their current struggles, goals, fears, and timelines. Using the **Google Gemini 2.5 Flash** model, it establishes an emotional, intelligent, and highly personalized portal with their "Future Self," generating actionable advice, warning signs, daily mantras, and unlocking a real-time, interactive, contextual temporal dialogue.
 
-Designed with an ultra-premium, responsive **Apple-style Glassmorphism UI**, smooth scroll triggers, and delightful glowing effects, this app is fully optimized for spectacular live demonstrations and Sunday pitch sessions.
+Designed with an ultra-premium, responsive **Apple-style Glassmorphism UI**, smooth scroll triggers, and delightful glowing effects, this app is fully optimized for spectacular live demonstrations and presentations.
 
 ---
 
@@ -133,7 +133,7 @@ Handles active, contextual, multi-turn follow-up conversations with the generate
 
 ---
 
-## 🌟 Demo Key Highlights for Sunday Session
+## 🌟 Demo Key Highlights
 - **Visual WOW Factor:** The glassmorphic forms and slow-moving orbital background glow.
 - **Micro-Interactions:** Custom dynamic loading titles ("Establishing timeline bridge...", "Analyzing psychological friction...") that cycle to capture the audience's attention during generation.
 - **Clean separation:** Separating index.html, style.css, and script.js guarantees professional production-grade files.
