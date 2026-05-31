@@ -1,0 +1,6 @@
+node_modules/
+.env
+.netlify/
+.system_generated/
+test-models.js
+test-api.js

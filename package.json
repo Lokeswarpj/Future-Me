@@ -1,0 +1,16 @@
+{
+  "name": "futureme-fullstack",
+  "version": "1.0.0",
+  "description": "AI-powered FutureMe fullstack personal reflection application",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "serverless-http": "^3.2.0"
+  }
+}
