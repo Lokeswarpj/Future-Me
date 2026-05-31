@@ -80,8 +80,8 @@ Receives personal reflection factors and generates a structured, tone-calibrated
 - **Request Body:**
   ```json
   {
-    "name": "Nitish",
-    "age": "23",
+    "name": "Lokeswar",
+    "age": "19",
     "goal": "Build a successful AI startup",
     "struggle": "Lack of consistency",
     "oneYearVision": "Running a profitable AI company",
@@ -109,8 +109,8 @@ Handles active, contextual, multi-turn follow-up conversations with the generate
   ```json
   {
     "userProfile": {
-      "name": "Nitish",
-      "age": "23",
+      "name": "Lokeswar",
+      "age": "19",
       "goal": "Build a successful AI startup",
       "struggle": "Lack of consistency",
       "oneYearVision": "Running a profitable AI company",
