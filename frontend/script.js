@@ -207,7 +207,7 @@ async function generateFutureMe() {
 
         // Render Generated Data to DOM
         const data = result.data;
-        outputMessage.innerHTML = `"${data.message}"`;
+        outputMessage.innerHTML = `"${data.message.replace(/\n/g, '<br>')}"`;
         outputIdentity.innerText = data.futureIdentity;
         outputHabit.innerText = data.habit;
 
