@@ -1,0 +1,20 @@
+{
+  "hosting": {
+    "public": "frontend",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/**",
+        "function": "api"
+      }
+    ]
+  },
+  "functions": {
+    "source": "functions",
+    "codeRewriteCopier": true
+  }
+}
